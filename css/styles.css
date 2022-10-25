@@ -1,0 +1,208 @@
+:root{
+    --main-text-color: #212121;
+    --primary-text-color: #757575;
+    --footer-text-address-color: rgba(255, 255, 255, 0.6);
+    --part-logo-color: #000000;
+    --secondary-background-color: #2F303A;
+    --third-background-color: #F5F4FA;
+    --quarter-background-color: #188CE8;
+    --first-color:  #FFFFFF;
+    --second-color:  #2196F3;
+}
+.body{
+    color: var(--main-text-color);
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li { 
+    list-style-type: none; 
+}
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
+/* стилізація header і footer*/
+.header{
+    background-color: var(--first-color);
+}
+.footer{
+    background-color: var(--secondary-background-color);
+}
+.logo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.03em;
+}
+.logo-web{
+    color: var(--second-color);
+}
+.logo-studio{
+    color: var(--part-logo-color);
+}
+.logo-studio-footer{
+    color: var(--first-color);
+}
+.nav-list .nav-link.current {
+    color: var(--second-color);
+}
+.nav-list{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+}
+.nav-link{
+    color: inherit;
+}
+.header-mail, .header-tel{
+    color: var(--primary-text-color);
+}
+.footer-mail, .footer-tel{
+    color: var(--footer-text-address-color);
+}
+.footer-map{
+    color: var(--first-color);
+}
+.nav-link:hover,.nav-link:focus,
+.header-mail:hover,.header-mail:focus, 
+.header-tel:hover,.header-tel:focus, 
+.footer-mail:hover,.footer-mail:focus,
+.footer-tel:hover,.footer-tel:focus,
+.footer-map:hover,.footr-map:focus {
+    color: var(--second-color);
+}
+.header-contacts{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+}
+.footer-contacts{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+/* стилізація Студія секції solutions (Ефективні рішення для вашого бізнесу)*/
+.solutions-title {
+    color: var(--first-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.solutions{
+    background-color: var(--secondary-background-color);
+}    
+.studio-button{
+    color: var(--first-color);
+    background-color: var(--second-color);
+    border-color: transparent;
+
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.studio-button:hover, .studio-button:focus{
+    color: var(--first-color);
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+}
+/* стилізація Студія секції advantage (Перелік переваг)*/
+.advantage-title{
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.advantage-text{
+    color: var(--primary-text-color);
+
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+/* стилізація Студія секції section Чим займаємося або і Наша команда */
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* стилізація Студія секції section Чим займаємося*/
+/* стилізація Студія секції section (Наша команда)*/
+.section.team{
+    background-color: var(--third-background-color);
+}
+.section-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+}
+.section-title-text{
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+}
+/* стилізація Портфоліо основного вмісту*/
+.portfolio-button{
+    color: var(--main-text-color);
+    background-color: var(--third-background-color);
+    border: none;
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.portfolio-button:hover, .portfolio-button:focus{
+    color: var(--first-color);
+    background-color: var(--quarter-background-color);
+}
+.portfolio-subtitle{
+    color: var(--main-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+}
+.portfolio-text{
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+}
