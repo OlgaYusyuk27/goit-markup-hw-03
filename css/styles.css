@@ -23,6 +23,10 @@
 a {
     text-decoration: none;
 }
+.list, p, h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
 li { 
     list-style-type: none; 
 }
@@ -41,9 +45,20 @@ li {
 /* стилізація header і footer*/
 .header{
     background-color: var(--first-color);
+    border-bottom: 1px solid #ECECEC;
+}
+.container.nav{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
 }
 .footer{
     background-color: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo{
     font-family: 'Raleway';
@@ -70,9 +85,19 @@ li {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    display: flex;
+    margin-left: 93px;
 }
 .nav-link{
     color: inherit;
+}
+.nav-list .item + .item{
+    margin-left: 50px;
+}
+.item{
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 .header-mail, .header-tel{
     color: var(--primary-text-color);
@@ -96,6 +121,11 @@ li {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    display: flex;
+    margin-left: auto;
+}
+.header-contacts .item + .item{
+    margin-left: 50px;
 }
 .footer-contacts{
     font-style: normal;
@@ -104,7 +134,9 @@ li {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 }
-
+.address{
+    margin-top: 20px;
+}
 /* стилізація Студія секції solutions (Ефективні рішення для вашого бізнесу)*/
 .solutions-title {
     color: var(--first-color);
@@ -112,13 +144,16 @@ li {
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
-    display: inline-block;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
+    margin-bottom: 30px;
+ }
 .solutions{
-    background-color: var(--secondary-background-color)
+    background-color: var(--secondary-background-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 94px;
 }    
 .studio-button{
     color: var(--first-color);
@@ -142,12 +177,22 @@ li {
     border-color: var(--second-color);
 }
 /* стилізація Студія секції advantage (Перелік переваг)*/
+.advantage{
+    margin-bottom: 94px;
+}
+.advantage-list.list{
+    display: flex;
+}
+.advantage-list .advantage-item + .advantage-item{
+    margin-left: 30px;
+}
 .advantage-title{
 font-weight: 700;
 font-size: 14px;
 line-height: calc(16 / 14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
+padding-bottom: 10px;
 }
 .advantage-text{
     color: var(--primary-text-color);
@@ -163,18 +208,24 @@ text-transform: uppercase;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 /* стилізація Студія секції section Чим займаємося*/
-
+.section.work{
+    padding-bottom: 94px;
+}
 /* стилізація Студія секції section (Наша команда)*/
 .section.team{
     background-color: var(--third-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .section-subtitle{
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 .section-title-text{
     color: var(--primary-text-color);
@@ -184,6 +235,18 @@ text-transform: uppercase;
     letter-spacing: 0.03em;
 }
 /* стилізація Портфоліо основного вмісту*/
+.portfolio{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.filter.list{
+    display: flex;
+    justify-content: center;
+}
+.filter .filter-item + .filter-item{
+    margin-left: 8px;
+    margin-bottom: 50px;
+}
 .portfolio-button{
     color: var(--main-text-color);
     background-color: var(--third-background-color);
@@ -196,6 +259,7 @@ text-transform: uppercase;
     line-height: calc(26 / 16);
     text-align: center;
     letter-spacing: 0.03em;
+    border-radius: 4px;
 }
 .portfolio-button:hover, .portfolio-button:focus{
     color: var(--first-color);
@@ -203,6 +267,7 @@ text-transform: uppercase;
 }
 .portfolio-subtitle{
     color: var(--main-text-color);
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
